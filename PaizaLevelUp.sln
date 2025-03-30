@@ -71,6 +71,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp_stdin_n_line", "stdin\c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs_stdin_n", "stdin\cs_stdin_n\cs_stdin_n.csproj", "{D3E6A8CA-6597-4880-8847-1FE496831472}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "fs_stdin_3", "stdin\fs_stdin_3\fs_stdin_3.fsproj", "{7877CA38-2770-4FF3-9E5B-6475C91745E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -423,6 +425,18 @@ Global
 		{D3E6A8CA-6597-4880-8847-1FE496831472}.Release|x64.Build.0 = Release|Any CPU
 		{D3E6A8CA-6597-4880-8847-1FE496831472}.Release|x86.ActiveCfg = Release|Any CPU
 		{D3E6A8CA-6597-4880-8847-1FE496831472}.Release|x86.Build.0 = Release|Any CPU
+		{7877CA38-2770-4FF3-9E5B-6475C91745E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7877CA38-2770-4FF3-9E5B-6475C91745E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7877CA38-2770-4FF3-9E5B-6475C91745E1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7877CA38-2770-4FF3-9E5B-6475C91745E1}.Debug|x64.Build.0 = Debug|Any CPU
+		{7877CA38-2770-4FF3-9E5B-6475C91745E1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7877CA38-2770-4FF3-9E5B-6475C91745E1}.Debug|x86.Build.0 = Debug|Any CPU
+		{7877CA38-2770-4FF3-9E5B-6475C91745E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7877CA38-2770-4FF3-9E5B-6475C91745E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7877CA38-2770-4FF3-9E5B-6475C91745E1}.Release|x64.ActiveCfg = Release|Any CPU
+		{7877CA38-2770-4FF3-9E5B-6475C91745E1}.Release|x64.Build.0 = Release|Any CPU
+		{7877CA38-2770-4FF3-9E5B-6475C91745E1}.Release|x86.ActiveCfg = Release|Any CPU
+		{7877CA38-2770-4FF3-9E5B-6475C91745E1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -460,6 +474,7 @@ Global
 		{0E9D1415-5974-49E0-8356-5611D2F8AF7F} = {70C43657-7D18-4E95-98C9-32CD9DF5809E}
 		{DDE5B9CF-FF88-4295-839A-E4FE2C20FDCF} = {70C43657-7D18-4E95-98C9-32CD9DF5809E}
 		{D3E6A8CA-6597-4880-8847-1FE496831472} = {70C43657-7D18-4E95-98C9-32CD9DF5809E}
+		{7877CA38-2770-4FF3-9E5B-6475C91745E1} = {70C43657-7D18-4E95-98C9-32CD9DF5809E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FDBD40E0-0899-4490-A0BE-BCAD0E93E6C3}
