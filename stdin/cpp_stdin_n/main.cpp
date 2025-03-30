@@ -1,23 +1,17 @@
 #include <iostream>
-#include <string>
-#include <vector>
+#include <sstream>
 using namespace std;
 
 int main()
 {
-	int line_count;
-	cin >> line_count;
-	cin.ignore();
+	string line;
+	getline(cin, line);
+	getline(cin, line);
 
-	vector<string> lines;
-	for (int i = 0; i < line_count; i++) {
-		string line;
-		getline(cin, line);
-		lines.push_back(line);
-	}
-
-	for (string line : lines) {
-		cout << line << endl;
+	stringstream ss(line);
+	string word;
+	while (getline(ss, word, ' ')) {
+		cout << word << endl;
 	}
 
 	return 0;
