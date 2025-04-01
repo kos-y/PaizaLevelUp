@@ -1,11 +1,9 @@
-readline = require 'readline'
-
-# Readlineインターフェイスを作成
-rl = readline.createInterface(
+# 標準入出力インターフェイス作成
+rl = require('readline').createInterface(
     input: process.stdin
     output: process.stdout
 )
 
-# 標準入力を処理
+# 入力した内容をそのまま出力
 rl.on 'line', (line) ->
     console.log line
