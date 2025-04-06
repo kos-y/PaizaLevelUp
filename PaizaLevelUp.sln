@@ -401,6 +401,14 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "fs_min_num", "d_rank_skillc
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "fs_diff_str", "d_rank_skillcheck_sample\fs\fs_diff_str\fs_diff_str.fsproj", "{910847E1-F4FF-4B5C-9165-E353736C5517}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "d_rank_skillcheck_archive", "d_rank_skillcheck_archive", "{EA678609-B8D3-49C7-8E24-6386E21A09B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "py", "py", "{FEB34086-2789-4456-814E-BACBAAA14ABE}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "py_email_address", "d_rank_skillcheck_archive\py\py_email_address\py_email_address.pyproj", "{7005BCBF-B795-4AFB-9784-13209EAE672D}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "py_square", "d_rank_skillcheck_archive\py\py_square\py_square.pyproj", "{F880FD44-4DA2-410A-BDF6-8A11144E657A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2355,6 +2363,18 @@ Global
 		{910847E1-F4FF-4B5C-9165-E353736C5517}.Release|x64.Build.0 = Release|Any CPU
 		{910847E1-F4FF-4B5C-9165-E353736C5517}.Release|x86.ActiveCfg = Release|Any CPU
 		{910847E1-F4FF-4B5C-9165-E353736C5517}.Release|x86.Build.0 = Release|Any CPU
+		{7005BCBF-B795-4AFB-9784-13209EAE672D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7005BCBF-B795-4AFB-9784-13209EAE672D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7005BCBF-B795-4AFB-9784-13209EAE672D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7005BCBF-B795-4AFB-9784-13209EAE672D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7005BCBF-B795-4AFB-9784-13209EAE672D}.Release|x64.ActiveCfg = Release|Any CPU
+		{7005BCBF-B795-4AFB-9784-13209EAE672D}.Release|x86.ActiveCfg = Release|Any CPU
+		{F880FD44-4DA2-410A-BDF6-8A11144E657A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F880FD44-4DA2-410A-BDF6-8A11144E657A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F880FD44-4DA2-410A-BDF6-8A11144E657A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F880FD44-4DA2-410A-BDF6-8A11144E657A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F880FD44-4DA2-410A-BDF6-8A11144E657A}.Release|x64.ActiveCfg = Release|Any CPU
+		{F880FD44-4DA2-410A-BDF6-8A11144E657A}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2555,6 +2575,9 @@ Global
 		{0C21E40C-5EEE-4238-BA85-5697707FEEB4} = {CDAB9401-FEC0-4FB4-AE55-CEE920180C01}
 		{73238EA9-AFD3-4A7A-8DCF-08B58979C00E} = {CDAB9401-FEC0-4FB4-AE55-CEE920180C01}
 		{910847E1-F4FF-4B5C-9165-E353736C5517} = {CDAB9401-FEC0-4FB4-AE55-CEE920180C01}
+		{FEB34086-2789-4456-814E-BACBAAA14ABE} = {EA678609-B8D3-49C7-8E24-6386E21A09B8}
+		{7005BCBF-B795-4AFB-9784-13209EAE672D} = {FEB34086-2789-4456-814E-BACBAAA14ABE}
+		{F880FD44-4DA2-410A-BDF6-8A11144E657A} = {FEB34086-2789-4456-814E-BACBAAA14ABE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FDBD40E0-0899-4490-A0BE-BCAD0E93E6C3}
