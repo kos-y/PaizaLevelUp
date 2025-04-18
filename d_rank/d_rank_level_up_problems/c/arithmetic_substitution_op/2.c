@@ -1,10 +1,13 @@
+// Paiza 問題集 Dランクレベルアップメニュー 割り算 C編
 #include <stdio.h>
 
 int main()
 {
-    int a = 437326;
-    int b = 9085;
+    int a = 437326, b = 9085;
 
-    printf("%d %d\n", a / b, a % b);
+    int x = a / b;
+    int y = a % b;
+
+    printf("%d %d\n", x, y);
     return 0;
 }
