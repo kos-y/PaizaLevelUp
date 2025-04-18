@@ -1,3 +1,5 @@
+// Paiza 問題集 標準出力 【行によって長さが違う二次元配列の表示】すべての行の長さと値が不定な 2 次元配列の出力 C編（paizaランク B 相当）
+// https://paiza.jp/works/mondai/stdout_primer/stdout_primer__variable_array_boss
 #include <stdio.h>
 #include <stdlib.h>
 
