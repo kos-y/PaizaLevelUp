@@ -1,6 +1,4 @@
-// Paiza 問題集
-// Dランク・スキルチェック見本セット
-// 文字の一致 C編
+// Paiza 問題集 Dランク・スキルチェック見本セット 文字の一致 C編
 #include <stdio.h>
 #include <string.h>
 
