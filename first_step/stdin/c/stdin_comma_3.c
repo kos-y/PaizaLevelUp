@@ -9,9 +9,7 @@
 int main()
 {
     char s[(LEN * COUNT) + COUNT + 1];
-
-    fgets(s, sizeof(s), stdin);
-    s[strcspn(s, "\n")] = '\0';
+    scanf("%s", s);
 
     char* t = strtok(s, ",");
     while (t != NULL) {
