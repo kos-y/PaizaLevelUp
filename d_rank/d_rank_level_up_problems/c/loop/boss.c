@@ -1,18 +1,19 @@
+// Paiza 問題集 Dランクレベルアップメニュー FizzBuzz C編
 #include <stdio.h>
+
+#define FIZZ(n) ((n) % 3 == 0)
+#define BUZZ(n) ((n) % 5 == 0)
 
 int main()
 {
     for (int i = 1; i <= 100; i++) {
-        if (i % 3 == 0 && i % 5 == 0) {
+        if (FIZZ(i) && BUZZ(i)) {
             printf("FizzBuzz\n");
-        }
-        else if (i % 3 == 0) {
+        } else if (FIZZ(i)) {
             printf("Fizz\n");
-        }
-        else if (i % 5 == 0) {
+        } else if (BUZZ(i)) {
             printf("Buzz\n");
-        }
-        else {
+        } else {
             printf("%d\n", i);
         }
     }
