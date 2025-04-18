@@ -1,3 +1,6 @@
+// Paiza 問題集
+// Dランク・スキルチェック見本セット
+// 一番小さい値 C編
 #include <stdio.h>
 #include <limits.h>
 
@@ -7,7 +10,8 @@ int main()
 
     for (int i = 0; i < 5; i++) {
         int n;
-        scanf("%d ", &n);
+
+        scanf("%d", &n);
         if (n < min_value) {
             min_value = n;
         }
