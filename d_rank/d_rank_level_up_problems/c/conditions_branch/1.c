@@ -1,4 +1,5 @@
 // Paiza 問題集 Dランクレベルアップメニュー 単純な条件分岐 C編
+// https://paiza.jp/works/mondai/d_rank_level_up_problems/d_rank_level_up_problems__conditions_branch_1
 #include <stdio.h>
 #include <string.h>
 
