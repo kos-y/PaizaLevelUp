@@ -1,5 +1,6 @@
 // Paiza 問題集 Dランクレベルアップメニュー 数値の分岐 C編
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
