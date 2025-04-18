@@ -1,3 +1,6 @@
+// Paiza 問題集
+// Dランク・スキルチェック見本セット
+// 足し算 C編
 #include <stdio.h>
 
 int main()
