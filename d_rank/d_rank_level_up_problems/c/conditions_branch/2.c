@@ -1,10 +1,18 @@
+// Paiza 問題集 Dランクレベルアップメニュー 数値の分岐 C編
 #include <stdio.h>
 
 int main()
 {
     int n;
-
     scanf("%d", &n);
-    printf("%s\n", n <= 100 ? "YES" : "NO");
+
+    char a[4];
+    if (n <= 100) {
+        strcpy(a, "YES");
+    } else {
+        strcpy(a, "NO");
+    }
+
+    printf("%s\n", a);
     return 0;
 }
