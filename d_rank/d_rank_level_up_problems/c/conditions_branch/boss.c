@@ -1,4 +1,5 @@
 // Paiza 問題集 Dランクレベルアップメニュー 占い C編
+// https://paiza.jp/works/mondai/d_rank_level_up_problems/d_rank_level_up_problems__conditions_branch_boss
 #include <stdio.h>
 #include <string.h>
 
