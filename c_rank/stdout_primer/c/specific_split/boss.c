@@ -1,3 +1,5 @@
+// Paiza 問題集 標準出力メニュー 【特定の文字で区切り 1 行で出力】大きな数値を 3 けたごとにカンマ区切りで出力 2 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/stdout_primer/stdout_primer__specific_split_boss
 #include <stdio.h>
 #include <string.h>
 
