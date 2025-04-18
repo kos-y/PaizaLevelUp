@@ -1,4 +1,5 @@
 // Paiza 問題集 Dランク・スキルチェック見本セット 一番小さい値 C編
+// https://paiza.jp/works/mondai/d_rank_skillcheck_sample/min_num
 #include <stdio.h>
 #include <limits.h>
 
