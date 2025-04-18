@@ -1,3 +1,5 @@
+// Paiza 問題集 標準出力メニュー N 個の文字を半分ずつ出力 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/stdout_primer/stdout_primer__variable_array_step1
 #include <stdio.h>
 
 void loop(int s, int e);
