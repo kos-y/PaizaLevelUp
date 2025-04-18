@@ -1,4 +1,5 @@
 // Paiza 問題集 Dランク・スキルチェック過去問題セット Eメールアドレス C編
+// https://paiza.jp/works/mondai/d_rank_skillcheck_archive/email_address
 #include <stdio.h>
 
 #define LEN 64
