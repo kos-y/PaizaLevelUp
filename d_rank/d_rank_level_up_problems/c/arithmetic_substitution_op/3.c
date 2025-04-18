@@ -1,4 +1,5 @@
 // Paiza 問題集 Dランクレベルアップメニュー 累乗 C編
+// https://paiza.jp/works/mondai/d_rank_level_up_problems/d_rank_level_up_problems__arithmetic_substitution_op_3
 #include <stdio.h>
 #include <math.h>
 
