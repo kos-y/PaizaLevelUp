@@ -1,11 +1,17 @@
+// Paiza 問題集 Dランク・スキルチェック過去問題セット Eメールアドレス C編
 #include <stdio.h>
+
+#define LEN 64
 
 int main()
 {
-    char s[65], t[65];
+    char s[LEN + 1], t[LEN + 1];
+    char format[5];
 
-    scanf("%s ", s);
-    scanf("%s ", t);
+    sprintf(format, "%%%ds", LEN);
+    scanf(format, s);
+    scanf(format, t);
+
     printf("%s@%s\n", s, t);
     return 0;
 }
