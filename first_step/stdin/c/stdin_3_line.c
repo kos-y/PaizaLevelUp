@@ -1,21 +1,20 @@
+// Paiza 問題集 標準入力サンプル問題セット 3行のデータの入力 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/stdin/stdin_3_line
 #include <stdio.h>
-#define LINE_COUNT 3
+#include <string.h>
+
+#define LEN 100
+#define LINE 3
 
 int main()
 {
-    char lines[LINE_COUNT][101];
+    for (int i = 0; i < LINE; i++) {
+        char s[LEN + 2];
 
-    // 入力
-    for (int i = 0; i < LINE_COUNT; i++)
-    {
-        fgets(lines[i], sizeof(lines[i]), stdin);
-    }
+        fgets(s, sizeof(s), stdin);
+        s[strcspn(s, "\n")] = '\0';
 
-    // 出力
-    for (int i = 0; i < LINE_COUNT; i++)
-    {
-        // fgetsは改行コードも含まれているためそのまま出力
-        printf("%s", lines[i]);
+        printf("%s\n", s);
     }
 
     return 0;
