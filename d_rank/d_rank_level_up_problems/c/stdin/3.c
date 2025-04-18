@@ -1,4 +1,5 @@
 // Paiza 問題集 Dランクレベルアップメニュー 1 つの入力 C編
+// https://paiza.jp/works/mondai/d_rank_level_up_problems/d_rank_level_up_problems__stdin_3
 #include <stdio.h>
 
 #define LEN 10
