@@ -1,6 +1,4 @@
-// Paiza 問題集
-// Dランク・スキルチェック見本セット
-// 一番小さい値 C編
+// Paiza 問題集 Dランク・スキルチェック見本セット 一番小さい値 C編
 #include <stdio.h>
 #include <limits.h>
 
