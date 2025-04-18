@@ -1,23 +1,21 @@
+// Paiza 問題集 標準出力 すべての行の長さが不定な 2 次元配列の出力 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/stdout_primer/stdout_primer__variable_array_step4
 #include <stdio.h>
-#include <stdlib.h>
 
 void loop(int s, int e);
 
 int main()
 {
     int n;
+
     scanf("%d", &n);
-
-    int* pm = (int*)malloc(sizeof(int) * n);
     for (int i = 0; i < n; i++) {
-        scanf("%d ", &pm[i]);
+        int m;
+
+        scanf("%d", &m);
+        loop(1, m);
     }
 
-    for (int i = 0; i < n; i++) {
-        loop(1, pm[i]);
-    }
-
-    free(pm);
     return 0;
 }
 
