@@ -1,10 +1,16 @@
+// Paiza 問題集 Dランクレベルアップメニュー 半角スペース区切りの 2 つの入力 C編
 #include <stdio.h>
+
+#define LEN 10
 
 int main()
 {
-    char s1[11], s2[11];
+    char s1[LEN + 1], s2[LEN + 1];
+    char format[10];
 
-    scanf("%s %s", s1, s2);
+    sprintf(format, "%%%ds %%%ds", LEN, LEN);
+    scanf(format, s1, s2);
+
     printf("%s\n", s1);
     printf("%s\n", s2);
     return 0;
