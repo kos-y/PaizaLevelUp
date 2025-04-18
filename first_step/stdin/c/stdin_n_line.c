@@ -1,50 +1,23 @@
+// Paiza 問題集 標準入力サンプル問題セット N行のデータの入力 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/stdin/stdin_n_line
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-// 行ごとの文字列構造値
-struct LINE {
-    // 文字列
-    char line[101];
-
-    // 次の行へのポインタ
-    struct LINE* p_next;
-};
+#define LEN 100
 
 int main()
 {
-    // 行数の入力
-    int line_count;
-    scanf("%d ", &line_count);
+    int n;
+    scanf("%d ", &n);
 
-    // 各行の文字列を入力
-    struct LINE* p_begin = NULL;
-    struct LINE* p_current = NULL;
-    for (int i = 0; i < line_count; i++) {
-        if (p_begin == NULL) {
-            p_begin = (struct LINE*)calloc(1, sizeof(struct LINE));
-            p_current = p_begin;
-        }
-        else {
-            p_current->p_next = (struct LINE*)calloc(1, sizeof(struct LINE));
-            p_current = p_current->p_next;
-        }
+    for (int i = 0; i < n; i++) {
+        char s[LEN + 2];
 
-        fgets(p_current->line, sizeof(p_current->line), stdin);
-    }
+        fgets(s, sizeof(s), stdin);
+        s[strcspn(s, "\n")] = '\0';
 
-    // 入力内容の出力
-    p_current = p_begin;
-    while (p_current != NULL) {
-        printf("%s", p_current->line);
-        p_current = p_current->p_next;
-    }
-
-    // メモリの解放
-    p_current = p_begin;
-    while (p_current != NULL) {
-        struct LINE* p_next  = p_current->p_next;
-        free(p_current);
-        p_current = p_next;
+        printf("%s\n", s);
     }
 
     return 0;
