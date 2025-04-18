@@ -1,12 +1,27 @@
+// Paiza 問題集
+// Dランク・スキルチェック見本セット
+// 文字の一致 C編
 #include <stdio.h>
 #include <string.h>
 
+#define LEN 100
+
 int main()
 {
-    char a[101], b[101];
+    char a[LEN + 1], b[LEN + 1];
+    char format[6];
 
-    scanf("%s ", a);
-    scanf("%s ", b);
-    printf("%s\n", strcmp(a, b) == 0 ? "OK" : "NG");
+    sprintf(format, "%%%ds", LEN);
+    scanf(format, a);
+    scanf(format, b);
+
+    char result[3];
+    if (strcmp(a, b) == 0) {
+        strcpy(result, "OK");
+    } else {
+        strcpy(result, "NG");
+    }
+
+    printf("%s\n", result);
     return 0;
 }
