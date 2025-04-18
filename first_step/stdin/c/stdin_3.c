@@ -1,18 +1,19 @@
+// Paiza 問題集 標準入力サンプル問題セット 3つのデータの入力 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/stdin/stdin_3
 #include <stdio.h>
-#include <string.h>
+
+#define LEN 100
 
 int main()
 {
-    char line[303];
-    
-    // 入力
-    fgets(line, sizeof(line), stdin);
+    char format[6];
+    sprintf(format, "%%%ds", LEN);
 
-    // 半角スペース区切りで文字列を取得して表示
-    char* p_token = strtok(line, " ");
-    while (p_token != NULL) {
-        printf("%s\n", p_token);
-        p_token = strtok(NULL, " ");
+    for (int i = 0; i < 3; i++) {
+        char s[LEN + 1];
+        scanf(format, s);
+
+        printf("%s\n", s);
     }
 
     return 0;
