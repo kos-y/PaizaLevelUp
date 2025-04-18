@@ -1,21 +1,21 @@
+// Paiza 問題集 標準入力サンプル問題セット N個のデータの入力 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/stdin/stdin_n
 #include <stdio.h>
 #include <string.h>
 
+#define LEN 100
+
 int main()
 {
-    // 文字列数の入力
-    int word_count;
-    scanf("%d ", &word_count);
+    int n;
+    scanf("%d ", &n);
 
-    // テキストの入力
-    char line[303];
-    fgets(line, sizeof(line), stdin);
-
-    // 半角スペース区切りで文字列を取得して出力
-    char* p_token = strtok(line, " ");
-    while (p_token != NULL) {
-        printf("%s\n", p_token);
-        p_token = strtok(NULL, " ");
+    char format[6];
+    sprintf(format, "%%%ds", LEN);
+    for (int i = 0; i < n; i++) {
+        char s[LEN + 1];
+        scanf(format, s);
+        printf("%s\n", s);
     }
 
     return 0;
