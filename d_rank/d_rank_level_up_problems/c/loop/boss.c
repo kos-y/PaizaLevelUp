@@ -1,4 +1,5 @@
 // Paiza 問題集 Dランクレベルアップメニュー FizzBuzz C編
+// https://paiza.jp/works/mondai/d_rank_level_up_problems/d_rank_level_up_problems__loop_boss
 #include <stdio.h>
 
 #define FIZZ(n) ((n) % 3 == 0)
