@@ -1,12 +1,9 @@
+// Paiza 問題集 標準出力メニュー 1 つの文字列を出力 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/stdout_primer/stdout_primer__string_output_step1
 #include <stdio.h>
 
 int main()
 {
-    int vs[] = {112, 97, 105, 122, 97, 0};
-
-    for (int i = 0; vs[i] != 0; i++) {
-        printf("%c", vs[i]);
-    }
-    printf("\n");
+    printf("paiza\n");
     return 0;
 }
