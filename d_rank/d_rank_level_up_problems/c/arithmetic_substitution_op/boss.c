@@ -1,3 +1,4 @@
+// Paiza 問題集 Dランクレベルアップメニュー 代入演算 1 C編
 #include <stdio.h>
 
 int main()
