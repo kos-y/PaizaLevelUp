@@ -1,3 +1,5 @@
+// 標準出力メニュー 【n * n の 2 次元配列の表示】N * N の九九表の出力 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/stdout_primer/stdout_primer__2dim_array_boss
 #include <stdio.h>
 
 int main()
@@ -11,10 +13,9 @@ int main()
             if (j < n) {
                 printf(" ");
             }
-            else {
-                printf("\n");
-            }
         }
+ 
+        printf("\n");
     }
 
     return 0;
