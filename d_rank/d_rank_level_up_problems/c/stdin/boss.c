@@ -1,4 +1,5 @@
 // Paiza 問題集 Dランクレベルアップメニュー 半角スペース区切りの 2 つの入力 C編
+// https://paiza.jp/works/mondai/d_rank_level_up_problems/d_rank_level_up_problems__stdin_boss
 #include <stdio.h>
 
 #define LEN 10
