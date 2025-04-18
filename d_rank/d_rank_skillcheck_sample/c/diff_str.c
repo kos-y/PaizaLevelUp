@@ -1,4 +1,5 @@
 // Paiza 問題集 Dランク・スキルチェック見本セット 文字の一致 C編
+// https://paiza.jp/works/mondai/d_rank_skillcheck_sample/diff_str
 #include <stdio.h>
 #include <string.h>
 
