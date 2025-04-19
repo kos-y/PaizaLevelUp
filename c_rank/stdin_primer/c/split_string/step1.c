@@ -1,3 +1,5 @@
+// Paiza 問題集 標準入力メニュー 2 つの文字列の半角スペース区切りでの分割 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/stdin_primer/stdin_primer__split_string_step1
 #include <stdio.h>
 #include <string.h>
 
