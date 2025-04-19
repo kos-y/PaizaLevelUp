@@ -1,3 +1,5 @@
+// Paiza 問題集 標準出力メニュー 文字列と N 個の整数の出力 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/stdout_primer/stdout_primer__specific_format_step2
 #include <stdio.h>
 
 int main()
@@ -11,6 +13,7 @@ int main()
             printf(", ");
         }
     }
+    
     printf("\n");
     return 0;
 }
