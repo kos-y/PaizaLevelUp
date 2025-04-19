@@ -1,3 +1,4 @@
+// Paiza 問題集 標準入力メニュー 1 つの入力 C編（paizaランク D 相当）
 #include <stdio.h>
 
 int main()
