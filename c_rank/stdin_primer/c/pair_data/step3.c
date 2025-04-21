@@ -1,47 +1,19 @@
+// Paiza 問題集 整数の組からの選択 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/stdin_primer/stdin_primer__pair_data_step3
 #include <stdio.h>
-#include <stdlib.h>
-
-struct S {
-    int a;
-    int b;
-
-    struct S* next;
-};
 
 int main()
 {
     int n;
+
     scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+        int a, b;
 
-    struct S* ps = NULL;
-    struct S* pc = NULL;
-    for (int i = 0; i < n; i++) {
-        struct S* p = (struct S*)calloc(1, sizeof(struct S));
-        if (i == 0) {
-            ps = p;
-            pc = p;
-        }
-        else {
-            pc->next = p;
-            pc = p;
-        }
-    }
-
-    for (pc = ps; pc != NULL; pc = pc->next) {
-        scanf("%d %d", &pc->a, &pc->b);
-    }
-
-    pc = ps;
-    for (int i = 1; pc != NULL; pc = pc->next, i++) {
+        scanf("%d %d", &a, &b);
         if (i == 8) {
-            printf("%d %d\n", pc->a, pc->b);
+            printf("%d %d\n", a, b);
         }
-    }
-
-    for (pc = ps; pc != NULL; ) {
-        struct S* p = pc->next;
-        free(pc);
-        pc = p;
     }
 
     return 0;
