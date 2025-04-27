@@ -1,3 +1,5 @@
+// Paiza 問題集 配列メニュー 配列の要素の入れ替え C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__array_elm_change
 #include <stdio.h>
 #include <stdlib.h>
 
