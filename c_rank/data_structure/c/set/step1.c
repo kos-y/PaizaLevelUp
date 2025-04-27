@@ -1,26 +1,24 @@
+// Paiza 問題集 データセット選択メニュー 集合の探索 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/data_structure/data_structure__set_step1
 #include <stdio.h>
 #include <stdbool.h>
-#include <stdlib.h>
 
 int main()
 {
     int n, b;
-    scanf("%d %d", &n, &b);
-
-    int* pa = (int*)malloc(sizeof(int) * n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &pa[i]);
-    }
-
     bool f = false;
+    
+    scanf("%d %d", &n, &b);
     for (int i = 0; i < n; i++) {
-        if (pa[i] == b) {
+        int a;
+
+        scanf("%d", &a);
+        if (a == b) {
             f = true;
             break;
         }
     }
 
-    printf(f ? "Yes\n" : "No\n");
-    free(pa);
+    printf("%s\n", f ? "Yes" : "No");
     return 0;
 }
