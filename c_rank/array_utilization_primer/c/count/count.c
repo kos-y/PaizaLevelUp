@@ -1,31 +1,21 @@
+// Paiza 問題集 配列活用メニュー 指定の要素のカウント C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__count
 #include <stdio.h>
-#include <stdlib.h>
-
-int count(int* a, int n, int k);
 
 int main()
 {
-    int n, k;
+    int n, k, c = 0;
 
     scanf("%d %d", &n, &k);
-    int* a = (int*)malloc(sizeof(int) * n);
     for (int i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
-    }
-    printf("%d\n", count(a, n, k));
-    free(a);
-    return 0;
-}
+        int a;
 
-int count(int* a, int n, int k)
-{
-    int c = 0;
-
-    for (int i = 0; i < n; i++) {
-        if (a[i] == k) {
+        scanf("%d", &a);
+        if (a == k) {
             c++;
         }
     }
 
-    return c;
+    printf("%d\n", c);
+    return 0;
 }
