@@ -1,39 +1,22 @@
+// Paiza 問題集 配列活用メニュー 指定要素の先頭位置 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__find
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
-
-int* input(int n);
-int find(int* a, int n, int k);
 
 int main()
 {
-    int n, k;
+    int n, k, f = -1;
 
     scanf("%d %d", &n, &k);
-    int* a = input(n);
-    printf("%d\n", find(a, n, k));
-    free(a);
-    return 0;
-}
-
-int* input(int n)
-{
-    int* a = (int*)malloc(sizeof(int) * n);
-
     for (int i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
-    }
+        int a;
 
-    return a;
-}
-
-int find(int* a, int n, int k)
-{
-    for (int i = 0; i < n; i++) {
-        if (a[i] == k) {
-            return i + 1;
+        scanf("%d", &a);
+        if (a == k && f < 0) {
+            f = i + 1;
         }
     }
 
-    return -1;
+    printf("%d\n", f);
+    return 0;
 }
