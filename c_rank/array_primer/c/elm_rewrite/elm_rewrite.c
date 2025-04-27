@@ -1,27 +1,22 @@
+// Paiza 問題集 配列メニュー 配列の書き換え C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__elm_rewrite
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
     int a, b, n;
-    int* pa;
 
     scanf("%d %d %d", &a, &b, &n);
-    pa = (int*)malloc(sizeof(int) * n);
     for (int i = 0; i < n; i++) {
-        scanf("%d", &pa[i]);
-    }
+        int v;
 
-    for (int i = 0; i < n; i++) {
-        if (pa[i] == a) {
-            pa[i] = b;
+        scanf("%d", &v);
+        if (v == a) {
+            v = b;
         }
+
+        printf("%d\n", v);
     }
 
-    for (int i = 0; i < n; i++) {
-        printf("%d\n", pa[i]);
-    }
-
-    free(pa);
     return 0;
 }
