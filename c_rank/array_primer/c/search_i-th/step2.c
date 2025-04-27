@@ -1,5 +1,7 @@
+// Paiza 問題集 配列メニュー 何番目にある? 2 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__search_i-th_step2
 #include <stdio.h>
-#define NELEMS(x) sizeof(x) / sizeof(x[0])
+#define NUM_ELE(x) sizeof(x) / sizeof(x[0])
 
 int indexof(int* a, int n, size_t sz);
 
@@ -9,7 +11,7 @@ int main()
     int n;
 
     scanf("%d", &n);
-    printf("%d\n", indexof(a, n, NELEMS(a)) + 1);
+    printf("%d\n", indexof(a, n, NUM_ELE(a)) + 1);
     return 0;
 }
 
