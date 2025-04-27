@@ -1,3 +1,5 @@
+// Paiza 問題集 配列メニュー 文字列の配列の入力 2 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__string_input_step2
 #include <stdio.h>
 #include <string.h>
 
