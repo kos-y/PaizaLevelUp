@@ -8,9 +8,9 @@ int count_period(char* s);
 int main()
 {
     char s[10001];
-    int i;
     
     scanf("%s", s);
+    int i;
     for (i = 0; s[i] == '0'; i++);
     if (s[i] == '.') {
         i--;
@@ -26,7 +26,6 @@ int main()
 
         while (count_period(s) >= 2) {
             for (i = strlen(s) - 1; s[i] != '.'; i--);
-
             int j;
             for (j = i + 1; s[j] != '.' && s[j] != '\0'; j++) {
                 s[j - 1] = s[j];
