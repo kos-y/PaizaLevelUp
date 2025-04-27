@@ -1,3 +1,5 @@
+// Paiza 問題集 文字列処理メニュー 大文字から小文字への変換 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/string_primer/normal_step6
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
