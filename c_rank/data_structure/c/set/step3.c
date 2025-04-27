@@ -1,3 +1,5 @@
+// Paiza 問題集 データセット選択メニュー 重複の判定 1 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/data_structure/data_structure__set_step3
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,24 +12,22 @@ struct V {
 int main()
 {
     int n;
-    scanf("%d ", &n);
-
-    int* pa = (int*)malloc(sizeof(int) * n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &pa[i]);
-    }
-    
     struct V* ps = NULL;
     struct V* p = NULL;
+
+    scanf("%d ", &n);
     for (int i = 0; i < n; i++) {
+        int a;
+
+        scanf("%d", &a);
         if (ps == NULL) {
             ps = (struct V*)calloc(1, sizeof(struct V));
-            ps->v = pa[i];
+            ps->v = a;
             p = ps;
         }    
         else {
             p->pn = (struct V*)calloc(1, sizeof(struct V));
-            p->pn->v = pa[i];
+            p->pn->v = a;
             p = p->pn;
         }
     }
@@ -35,6 +35,7 @@ int main()
     p = ps->pn;
     while (p != NULL) {
         struct V* p2 = ps;
+
         while (p2 != p) {
             if (p->v == p2->v) {
                 printf("Yes\n");
@@ -43,6 +44,7 @@ int main()
             
             p2 = p2->pn;
         }
+        
         if (p2 == p) {
             printf("No\n");
         }
@@ -51,11 +53,11 @@ int main()
     }
     
     p = ps;
-    free(pa);
     while (p != NULL) {
-        struct V* p2 = p->pn;
+        struct V* pn = p->pn;
+
         free(p);
-        p = p2;
+        p = pn;
     }
 
     return 0;
