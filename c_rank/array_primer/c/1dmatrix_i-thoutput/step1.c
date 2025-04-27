@@ -1,19 +1,13 @@
+// Paiza 問題集 配列メニュー i番目の出力 1 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__1dmatrix_i-thoutput_step1
 #include <stdio.h>
 #include <string.h>
 
 int main()
 {
-    int k, i = 0;
-    char a[] = "1 3 5 4 6 2 1 7 1 5";
+    int a[] = {1, 3, 5, 4, 6, 2, 1, 7, 1, 5}, k;
 
     scanf("%d", &k);
-    char* p = strtok(a, " ");
-    while (p != NULL) {
-        if (++i == k) {
-            printf("%s\n", p);
-            break;
-        }
-        p = strtok(NULL, " ");
-    }
+    printf("%d\n", a[k - 1]);
     return 0;
 }
