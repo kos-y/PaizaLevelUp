@@ -1,41 +1,22 @@
+// Paiza 問題集 配列活用メニュー 配列の最大値 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__max
 #include <stdio.h>
-#include <stdlib.h>
 #include <limits.h>
-
-int* input(int n);
-int maxint(int* a, int n);
 
 int main()
 {
-    int n;
+    int n, max = INT_MIN;
 
     scanf("%d", &n);
-    int* a = input(n);
-    printf("%d\n", maxint(a, n));
-    free(a);
-    return 0;
-}
-
-int* input(int n)
-{
-    int* a = (int*)malloc(sizeof(int) * n);
-
     for (int i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
-    }
+        int a;
 
-    return a;
-}
-
-int maxint(int* a, int n)
-{
-    int m = INT_MIN;
-
-    for (int i = 0; i < n; i++) {
-        if (m < a[i]) {
-            m = a[i];
+        scanf("%d", &a);
+        if (max < a) {
+            max = a;
         }
     }
 
-    return m;
+    printf("%d\n", max);
+    return 0;
 }
