@@ -1,3 +1,5 @@
+// Paiza 問題集 文字列処理メニュー 大文字小文字の反転 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/string_primer/normal_step8
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -18,11 +20,6 @@ int main()
 void toggle_upper_lower(char* s)
 {
     for (int i = 0; s[i] != '\0'; i++) {
-        if (isupper(s[i])) {
-            s[i] = tolower(s[i]);
-        }
-        else {
-            s[i] = toupper(s[i]);
-        }
+        s[i] = isupper(s[i]) ? tolower(s[i]) : toupper(s[i]);
     }
 }
