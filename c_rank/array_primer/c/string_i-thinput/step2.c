@@ -1,3 +1,5 @@
+// Paiza 問題集 配列メニュー i 番目の出力 2 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__string_i-thinput_step2
 #include <stdio.h>
 #include <string.h>
 
