@@ -1,31 +1,23 @@
+// Paiza 問題集 配列メニュー 何個ある? Boss C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__search_count_boss
 #include <stdio.h>
-#include <stdlib.h>
 
 int count(int* a, int n, size_t sz);
 
 int main()
 {
-    int n, m;
+    int n, m, c = 0;
 
     scanf("%d %d", &n, &m);
-    int* a = (int*)malloc(sizeof(int) * m);
     for (int i = 0; i < m; i++) {
-        scanf("%d", &a[i]);
-    }
-    printf("%d\n", count(a, n, m));
-    free(a);
-    return 0;
-}
+        int a;
 
-int count(int* a, int n, size_t sz)
-{
-    int c = 0;
-
-    for (int i = 0; i < sz; i++) {
-        if (a[i] == n) {
+        scanf("%d", &a);
+        if (a == n) {
             c++;
         }
     }
 
-    return c;
+    printf("%d\n", c);
+    return 0;
 }
