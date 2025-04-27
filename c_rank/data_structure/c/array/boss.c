@@ -1,3 +1,5 @@
+// Paiza 問題集 データセット選択メニュー 動的配列 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/data_structure/data_structure__array_boss
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -22,7 +24,6 @@ int main()
     
     struct V* s = NULL;
     struct V* l = NULL;
-
     input_values(n, &s, &l);
     query(q, &s, &l);
     dispose(&s, &l);
@@ -49,6 +50,7 @@ void query(int q, struct V** ps, struct V** pl)
         case 1:
             pop_back(pl);
             break;
+
         case 2:
             print(*ps);
             break;
@@ -59,8 +61,8 @@ void query(int q, struct V** ps, struct V** pl)
 void push_back(struct V** ps, struct V** pl)
 {
     int x;
-    scanf("%d", &x);
 
+    scanf("%d", &x);
     if (*ps == NULL) {
         *ps = *pl = (struct V*)malloc(sizeof(struct V));
         (*ps)->p = NULL;
@@ -79,6 +81,7 @@ void push_back(struct V** ps, struct V** pl)
 void pop_back(struct V** pl)
 {
     struct V* p = (*pl)->p;
+
     p->n = NULL;
     free(*pl);
     (*pl) = p;
@@ -87,6 +90,7 @@ void pop_back(struct V** pl)
 void print(struct V* s)
 {
     struct V* c = s;
+
     while (c != NULL) {
         printf("%d", c->v);
         if (c->n != NULL) {
@@ -94,12 +98,14 @@ void print(struct V* s)
         }
         c = c->n;
     }
+    
     printf("\n");
 }
 
 void dispose(struct V** ps, struct V** pl)
 {
     struct V* c = *pl;
+
     while (c != NULL) {
         struct V* p = c->p;
         free(c);
