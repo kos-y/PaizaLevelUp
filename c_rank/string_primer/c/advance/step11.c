@@ -1,3 +1,5 @@
+// Paiza 問題集 文字列処理メニュー 巨大な数の足し算 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/string_primer/advance_step11
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -20,13 +22,12 @@ void dispose(struct V* p_start);
 int main()
 {
     char s[LEN + 2], t[LEN + 2];
-    
-    input(s, sizeof(s));
-    input(t, sizeof(t));
-    
     struct V* p_start = NULL;
     struct V* p_last = NULL;
     struct V* p = NULL;
+    
+    input(s, sizeof(s));
+    input(t, sizeof(t));
     int up = add(s, t, &p_start, &p_last, &p);
     upcarry(up, &p_start, p);
     print(p_start);
