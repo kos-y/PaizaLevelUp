@@ -1,3 +1,5 @@
+// Paiza 問題集 文字列処理メニュー 文字列の反転 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/string_primer/normal_step10
 #include <stdio.h>
 #include <string.h>
 
