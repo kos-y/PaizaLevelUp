@@ -1,37 +1,21 @@
+// Paiza 問題集 配列メニュー 要素のカウント C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__elm_count
 #include <stdio.h>
-#include <stdlib.h>
-
-void input(int* p, int c);
-int count(int* p, int m, int c);
 
 int main()
 {
-    int n, m;
+    int n, m, c = 0;
 
     scanf("%d %d", &n, &m);
-    int* a = (int*)malloc(sizeof(int) * n);
-    input(a, n);
-    printf("%d\n", count(a, m, n));
-    free(a);
-    return 0;
-}
+    for (int i = 0; i < n; i++) {
+        int a;
 
-void input(int* p, int c)
-{
-    for (int i = 0; i < c; i++) {
-        scanf("%d", &p[i]);
-    }
-}
-
-int count(int* p, int m, int c)
-{
-    int a = 0;
-
-    for (int i = 0; i < c; i++) {
-        if (p[i] == m) {
-            a++;
+        scanf("%d", &a);
+        if (a == m) {
+            c++;
         }
     }
 
-    return a;
+    printf("%d\n", c);
+    return 0;
 }
