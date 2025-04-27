@@ -1,22 +1,20 @@
+// Paiza 問題集 配列メニュー ある数以上以下の要素の列挙 2 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__array_ave_step2
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 int main()
 {
     int n, k;
-    char ca[1011];
 
     scanf("%d %d ", &n, &k);
-    fgets(ca, sizeof(ca), stdin);
-    ca[strcspn(ca, "\n")] = '\0';
-    char* p = strtok(ca, " ");
-    while (p != NULL) {
-        int a = atoi(p);
+    for (int i = 0; i < n; i++) {
+        int a;
+
+        scanf("%d", &a);
         if (a >= k) {
             printf("%d\n", a);
         }
-        p = strtok(NULL, " ");
     }
+
     return 0;
 }
