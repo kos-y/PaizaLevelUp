@@ -1,27 +1,26 @@
+// Paiza 問題集 データセット選択メニュー 複数回のランダムアクセス C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/data_structure/data_structure__array_step2
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-    int n;
+    int n, q;
+
     scanf("%d", &n);
     int* pa = (int*)malloc(sizeof(int) * n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &pa[i]);
     }
 
-    int q;
     scanf("%d", &q);
-    int* pb = (int*)malloc(sizeof(int)* q);
     for (int i = 0; i < q; i++) {
-        scanf("%d", &pb[i]);
-    }
+        int b;
 
-    for (int i = 0; i < q; i++) {
-        printf("%d\n", pa[pb[i] - 1]);
+        scanf("%d", &b);
+        printf("%d\n", pa[b - 1]);
     }
 
     free(pa);
-    free(pb);
     return 0;
 }
