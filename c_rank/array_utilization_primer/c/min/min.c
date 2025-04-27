@@ -1,41 +1,22 @@
+// Paiza 問題集 配列活用メニュー 配列の最小値 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__min
 #include <stdio.h>
-#include <stdlib.h>
 #include <limits.h>
-
-int* input(int n);
-int minint(int* a, int n);
 
 int main()
 {
-    int n;
+    int n, min = INT_MAX;
 
     scanf("%d", &n);
-    int* a = input(n);
-    printf("%d\n", minint(a, n));
-    free(a);
-    return 0;
-}
-
-int* input(int n)
-{
-    int* a = (int*)malloc(sizeof(int) * n);
-
     for (int i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
-    }
+        int a;
 
-    return a;
-}
-
-int minint(int* a, int n)
-{
-    int m = INT_MAX;
-
-    for (int i = 0; i < n; i++) {
-        if (m > a[i]) {
-            m = a[i];
+        scanf("%d", &a);
+        if (a < min) {
+            min = a;
         }
     }
 
-    return m;
+    printf("%d\n", min);
+    return 0;
 }
