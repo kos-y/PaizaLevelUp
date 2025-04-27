@@ -1,47 +1,35 @@
+// Paiza 問題集 配列活用メニュー 要素の種類数 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__kind
 #include <stdio.h>
 #include <stdlib.h>
-
-int* input(int n);
-int kind(int* a, int n);
-int cmp(const void* a, const void* b);
+#include <stdbool.h>
+#include <string.h>
 
 int main()
 {
-    int n;
+    int n, l = 0;
 
     scanf("%d ", &n);
-    int* a = input(n);
-    printf("%d\n", kind(a, n));
-    free(a);
-    return 0;
-}
-
-int* input(int n)
-{
-    int* a = (int*)malloc(sizeof(int) * n);
-
+    int* pk = (int*)calloc(n, sizeof(int));
+    memset(pk, -1, sizeof(int) * n);
     for (int i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
-    }
+        int a;
+        bool f = false;
 
-    return a;
-}
+        scanf("%d", &a);
+        for (int j = 0; pk[j] >= 0 && j < n; j++) {
+            if (a == pk[j]) {
+                f = true;
+                break;
+            }
+        }
 
-int kind(int* a, int n)
-{
-    int k = 1;
-
-    qsort(a, n, sizeof(int), cmp);
-    for (int i = 1; i < n; i++) {
-        if (a[i - 1] != a[i]) {
-            k++;
+        if (!f) {
+            pk[l++] = a;
         }
     }
 
-    return k;
-}
-
-int cmp(const void* a, const void* b)
-{
-    return *(int*)a - *(int*)b;
+    printf("%d\n", l);
+    free(pk);
+    return 0;
 }
