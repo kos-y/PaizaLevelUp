@@ -1,35 +1,28 @@
+// Paiza 問題集 標準入力メニュー 【N 行 M 列のデータの入力】行ごとに要素数の異なる整数列の入力 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/stdin_primer/stdin_primer__matrix_data_boss
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
     int n;
     scanf("%d", &n);
 
-    int** pa = (int**)malloc(sizeof(int*) * n);
-    int* pm = (int*)malloc(sizeof(int) * n);
     for (int i = 0; i < n; i++) {
-        scanf("%d", &pm[i]);
-        pa[i] = (int*)malloc(sizeof(int*) * pm[i]);
-        for (int j = 0; j < pm[i]; j++) {
-            scanf("%d", &pa[i][j]);
-        }
-    }
+        int m;
 
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < pm[i]; j++) {
-            printf("%d", pa[i][j]);
-            if (j < pm[i] - 1) {
+        scanf("%d", &m);
+        for (int j = 0; j < m; j++) {
+            int a;
+
+            scanf("%d", &a);
+            printf("%d", a);
+            if (j < m - 1) {
                 printf(" ");
             }
         }
+
         printf("\n");
     }
 
-    for (int i = 0; i < n; i++) {
-        free(pa[i]);
-    }
-    free(pa);
-    free(pm);
     return 0;
 }
