@@ -1,35 +1,25 @@
+// Paiza 問題集 配列メニュー 配列の連結 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__array_join
 #include <stdio.h>
-#include <stdlib.h>
-
-void input(int** p, int c);
-void output(int* p, int c);
 
 int main()
 {
-    int n, m, *a, *b;
+    int n, m;
 
     scanf("%d %d", &n, &m);
-    input(&a, n);
-    input(&b, m);
-    output(a, n);
-    output(b, m);
-    free(a);
-    free(b);
+    for (int i = 0; i < n; i++) {
+        int a;
+
+        scanf("%d", &a);
+        printf("%d\n", a);
+    }
+
+    for (int i = 0; i < m; i++) {
+        int b;
+
+        scanf("%d", &b);
+        printf("%d\n", b);
+    }
+
     return 0;
-}
-
-void input(int** p, int c)
-{
-    *p = (int*)malloc(sizeof(int) * c);
-
-    for (int i = 0; i < c; i++) {
-        scanf("%d", &(*p)[i]);
-    }
-}
-
-void output(int* p, int c)
-{
-    for (int i = 0; i < c; i++) {
-        printf("%d\n", p[i]);
-    }
 }
