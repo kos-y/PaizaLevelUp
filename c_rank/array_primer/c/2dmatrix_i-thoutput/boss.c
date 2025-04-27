@@ -1,26 +1,22 @@
+// Paiza 問題集 配列メニュー 【二次元配列の入出力】i番目の出力 Boss C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_i-thoutput_boss
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
     int n, m, k, l;
-    int** a;
-
+    
     scanf("%d %d %d %d", &n, &m, &k, &l);
-    a = (int**)malloc(sizeof(int*) * n);
     for (int i = 0; i < n; i++) {
-        a[i] = (int*)malloc(sizeof(int) * m);
         for (int j = 0; j < m; j++) {
-            scanf("%d", &a[i][j]);
+            int a;
+
+            scanf("%d", &a);
+            if (i == k - 1 && j == l - 1) {
+                printf("%d\n", a);
+            }
         }
     }
-
-    printf("%d\n", a[k - 1][l - 1]);
-
-    for (int i = 0; i < n; i++) {
-        free(a[i]);
-    }
-    free(a);
 
     return 0;
 }
