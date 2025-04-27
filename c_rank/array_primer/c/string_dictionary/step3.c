@@ -1,3 +1,5 @@
+// Paiza 問題集 配列メニュー 辞書順に出力 3 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__string_dictionary_step3
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
