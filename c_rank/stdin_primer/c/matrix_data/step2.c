@@ -1,5 +1,6 @@
+// Paiza 問題集 標準入力メニュー N 行 3 列の整数の入力 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/stdin_primer/stdin_primer__matrix_data_step2
 #include <stdio.h>
-#include <stdlib.h>
 #define N 3
 
 int main()
@@ -7,30 +8,19 @@ int main()
     int n;
     scanf("%d", &n);
 
-    int** pp = (int**)malloc(sizeof(int*) * n);
-    for (int i = 0; i < n; i++) {
-        pp[i] = (int*)malloc(sizeof(int) * N);
-    }
-
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < N; j++) {
-            scanf("%d", &pp[i][j]);
-        }
-    }
+            int a;
 
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < N; j++) {
-            printf("%d", pp[i][j]);
+            scanf("%d", &a);
+            printf("%d", a);
             if (j < N - 1) {
                 printf(" ");
             }
         }
+
         printf("\n");
     }
 
-    for (int i = 0; i < n; i++) {
-        free(pp[i]);
-    }
-    free(pp);
     return 0;
 }
