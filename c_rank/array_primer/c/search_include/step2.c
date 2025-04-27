@@ -1,6 +1,8 @@
+// Paiza 問題集 配列メニュー 配列に含まれている? 2 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__search_include_step2
 #include <stdio.h>
 #include <stdbool.h>
-#define NELEMS(x) sizeof(x) / sizeof(x[0])
+#define NUM_ELE(x) sizeof(x) / sizeof(x[0])
 
 int main()
 {
@@ -9,7 +11,7 @@ int main()
     bool find = false;
 
     scanf("%d", &n);
-    for (int i = 0; i < NELEMS(a); i++) {
+    for (int i = 0; i < NUM_ELE(a); i++) {
         if (a[i] == n) {
             find = true;
             break;
