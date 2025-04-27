@@ -1,30 +1,23 @@
+// Paiza 問題集 配列メニュー 何番目にある? 3 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__search_i-th_step3
 #include <stdio.h>
-#include <stdlib.h>
-
-int indexof(int* a, int n, size_t sz);
+#include <stdbool.h>
 
 int main()
 {
     int n, m;
-    int* a;
+    bool f = false;
 
     scanf("%d %d", &n, &m);
-    a = (int*)malloc(sizeof(int) * m);
     for (int i = 0; i < m; i++) {
-        scanf("%d", &a[i]);
-    }
-    printf("%d\n", indexof(a, n, m) + 1);
-    free(a);
-    return 0;
-}
+        int a;
 
-int indexof(int* a, int n, size_t sz)
-{
-    for (int i = 0; i < sz; i++) {
-        if (a[i] == n) {
-            return i;
+        scanf("%d", &a);
+        if (!f && a == n) {
+            printf("%d\n", i + 1);
+            f = true;
         }
     }
 
-    return -1;
+    return 0;
 }
