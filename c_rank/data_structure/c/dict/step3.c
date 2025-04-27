@@ -1,9 +1,13 @@
+// Paiza 問題集 データセット選択メニュー 文字列の出現率 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/data_structure/data_structure__dict_step3
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+#define LEN 3
+
 struct C {
-    char s[4];
+    char s[LEN + 1];
     int c;
     
     struct C* pn;
@@ -14,17 +18,14 @@ int sort_func(const void* x, const void* y);
 
 int main()
 {
-    int n;
-    scanf("%d ", &n);
-    
+    int n, c = 0;
+    char s[LEN + 1];
     struct C* ps = NULL;
     struct C* p = NULL;
-    
-    char s[4];
-    int c = 0;
+
+    scanf("%d ", &n);
     for (int i = 0; i < n; i++) {
         scanf("%s", s);
-
         if (ps == NULL) {
             ps = (struct C*)calloc(1, sizeof(struct C));
             strcpy(ps->s, s);
@@ -34,6 +35,7 @@ int main()
         }
         else {
             struct C* pm = search(ps, s);
+
             if (pm != NULL) {
                 pm->c++;    
             }
@@ -64,8 +66,8 @@ int main()
         free(p);
         p = pt;
     }
-    free(sort);
 
+    free(sort);
    return 0;
 }
 
