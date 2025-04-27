@@ -1,39 +1,23 @@
+// Paiza 問題集 配列活用メニュー 指定要素があるかの判定 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__exist
 #include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
-
-int* input(int n);
-bool exist(int* a, int n, int k);
+#include <string.h>
 
 int main()
 {
     int n, k;
+    char r[4] = "No";
 
     scanf("%d %d", &n, &k);
-    int* a = input(n);
-    printf("%s\n", exist(a, n, k) ? "Yes" : "No");
-    free(a);
-    return 0;
-}
-
-int* input(int n)
-{
-    int* a = (int*)malloc(sizeof(int) * n);
-
     for (int i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
-    }
+        int a;
 
-    return a;
-}
-
-bool exist(int* a, int n, int k)
-{
-    for (int i = 0; i < n; i++) {
-        if (a[i] == k) {
-            return true;
+        scanf("%d", &a);
+        if (a == k) {
+            strcpy(r, "Yes");
         }
     }
 
-    return false;
+    printf("%s\n", r);
+    return 0;
 }
