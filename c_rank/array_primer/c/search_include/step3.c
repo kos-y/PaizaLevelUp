@@ -1,5 +1,6 @@
+// Paiza 問題集 配列メニュー 配列に含まれている? 3 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__search_include_step3
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdbool.h>
 
 int main()
@@ -8,20 +9,15 @@ int main()
     bool find = false;
 
     scanf("%d %d", &n, &m);
-
-    int* a = (int)malloc(sizeof(int) * n);
     for (int i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
-    }
+        int a;
 
-    for (int i = 0; i < n; i++) {
-        if (a[i] == m) {
+        scanf("%d", &a);
+        if (a == m) {
             find = true;
-            break;
         }
     }
     
     printf("%s\n", find ? "Yes" : "No");
-    free(a);
     return 0;
 }
