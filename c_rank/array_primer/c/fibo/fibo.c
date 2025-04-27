@@ -1,11 +1,13 @@
+// Paiza 問題集 配列メニュー フィボナッチ数 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__fibo
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
     int n;
-    scanf("%d ", &n);
 
+    scanf("%d", &n);
     int* f = (int*)calloc(n, sizeof(int));
     f[1] = 1;
     for (int i = 2; i < n; i++) {
