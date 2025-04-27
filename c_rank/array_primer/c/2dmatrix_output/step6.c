@@ -1,3 +1,5 @@
+// Paiza 問題集 配列メニュー i 行目 j 列目の出力 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_output_step6
 #include <stdio.h>
 #define H 3
 #define W 3
