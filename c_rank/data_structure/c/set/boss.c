@@ -1,3 +1,5 @@
+// Paiza 問題集 データセット選択メニュー 集合の結合 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/data_structure/data_structure__set_boss
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
