@@ -1,3 +1,5 @@
+// Paiza 問題集 配列メニュー 全要素の出力 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__2dmatrix_output_step2
 #include <stdio.h>
 
 #define H 2
@@ -17,7 +19,9 @@ int main()
                 printf(" ");
             }
         }
+
         printf("\n");
     }
+    
     return 0;
 }
