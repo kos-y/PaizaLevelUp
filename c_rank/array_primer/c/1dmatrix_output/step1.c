@@ -1,17 +1,13 @@
+// Paiza 問題集 配列メニュー 要素数の出力 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__1dmatrix_output_step1
 #include <stdio.h>
 #include <string.h>
+#define NUM_ELE(x) sizeof(x) / sizeof(x[0])
 
 int main()
 {
-    char s[] = "5 1 3 4 5 12 6 8 1 3";
-    int c = 0;
+    int n[] = {5, 1, 3, 4, 5, 12, 6, 8, 1, 3};
 
-    char* p = strtok(s, " ");
-    while (p != NULL) {
-        c++;
-        p = strtok(NULL, " ");
-    }
-
-    printf("%d\n", c);
+    printf("%lu\n", NUM_ELE(n));
     return 0;
 }
