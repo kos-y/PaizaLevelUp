@@ -1,3 +1,5 @@
+// Paiza 問題集 文字列処理メニュー パスワード作成 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/string_primer/advance_step6
 #include <stdio.h>
 #include <stdlib.h>
 
