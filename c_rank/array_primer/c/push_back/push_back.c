@@ -1,32 +1,20 @@
+// Paiza 問題集 配列メニュー 配列末尾への追加 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_primer/array_primer__push_back
 #include <stdio.h>
 #include <stdlib.h>
-
-void input(int* p, int c);
-void output(int* p, int c);
 
 int main()
 {
     int n, m;
 
     scanf("%d %d", &n, &m);
-    int* a = (int*)malloc(sizeof(int) * n);
-    input(a, n);
-    output(a, n);
+    for (int i = 0; i < n; i++) {
+        int a;
+
+        scanf("%d", &a);
+        printf("%d\n", a);
+    }
+
     printf("%d\n", m);
-    free(a);
     return 0;
-}
-
-void input(int* p, int c)
-{
-    for (int i = 0; i < c; i++) {
-        scanf("%d", &p[i]);
-    }
-}
-
-void output(int* p, int c)
-{
-    for (int i = 0; i < c; i++) {
-        printf("%d\n", p[i]);
-    }
 }
