@@ -1,3 +1,5 @@
+// Paiza 問題集 データセット選択メニュー 商品の検索 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/data_structure/data_structure__dict_boss
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
