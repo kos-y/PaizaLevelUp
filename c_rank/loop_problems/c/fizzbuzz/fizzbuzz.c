@@ -1,3 +1,5 @@
+// Paiza 問題集 ループメニュー1 FizzBuzz C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/loop_problems/loop_problems__fizzbuzz
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -11,7 +13,7 @@ int main()
             fizzbuzz = true;
         }
 
-        if (i % 5  == 0) {
+        if (i % 5 == 0) {
             printf("Buzz");
             fizzbuzz = true;
         }
