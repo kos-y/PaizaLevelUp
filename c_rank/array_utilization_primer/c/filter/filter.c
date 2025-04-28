@@ -1,3 +1,5 @@
+// Paiza 問題集 配列活用メニュー 【配列への副作用を伴う操作】条件を満たす要素のみの配列作成 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__filter
 #include <stdio.h>
 #include <stdlib.h>
 
