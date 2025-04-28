@@ -1,3 +1,5 @@
+// Paiza 問題集 ループメニュー1 数列の反転 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/loop_problems/loop_problems__seq_reverse
 #include <stdio.h>
 #include <stdlib.h>
 
