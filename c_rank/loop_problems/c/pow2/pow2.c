@@ -1,3 +1,5 @@
+// Paiza 問題集 ループメニュー1 2 の累乗を表示 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/loop_problems/loop_problems__pow2
 #include <stdio.h>
 #include <math.h>
 
