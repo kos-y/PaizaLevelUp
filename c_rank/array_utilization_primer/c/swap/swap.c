@@ -1,3 +1,5 @@
+// Paiza 問題集 配列活用メニュー 指定要素の入れ替え C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__swap
 #include <stdio.h>
 #include <stdlib.h>
 
