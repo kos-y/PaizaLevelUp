@@ -1,3 +1,5 @@
+// Paiza 問題集 配列活用メニュー 傾斜配点 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__exam
 #include <stdio.h>
 
 int main()
@@ -12,14 +14,13 @@ int main()
     
     int sum = 0;
     for (int i = 0; i < n; i++) {
-        int s[5];
-        for (int j = 0; j < 5; j++) {
-            scanf("%d", &s[j]);
-        }
-        
         int sc = 0;
+
         for (int j = 0; j < 5; j++) {
-            sc += s[j] * m[j];
+            int s;
+
+            scanf("%d", &s);
+            sc += s * m[j];
         }
         
         if (sc > sum) {
