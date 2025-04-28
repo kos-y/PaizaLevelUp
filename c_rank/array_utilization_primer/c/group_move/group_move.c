@@ -1,3 +1,5 @@
+// Paiza 問題集 配列活用メニュー 【配列に対しての複雑な処理】集団行動 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__group_move
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -18,8 +20,8 @@ int main()
     
     for (int i = 0; i < q; i++) {
         char c[32];
-        fgets(c, sizeof(c), stdin);
         
+        fgets(c, sizeof(c), stdin);
         char* p = strtok(c, " ");
         if (strcmp(p, "swap") == 0) {
             int a = atoi(strtok(NULL, " ")) - 1;
