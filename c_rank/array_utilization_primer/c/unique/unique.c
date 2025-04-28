@@ -1,3 +1,5 @@
+// Paiza 問題集 配列活用メニュー 重複要素の削除 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__unique
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
