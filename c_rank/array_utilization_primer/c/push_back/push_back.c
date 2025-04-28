@@ -1,3 +1,5 @@
+// Paiza 問題集 配列活用メニュー 末尾への要素の追加 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__push_back
 #include <stdio.h>
 #include <stdlib.h>
 
