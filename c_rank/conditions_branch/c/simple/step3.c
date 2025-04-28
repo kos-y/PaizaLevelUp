@@ -1,3 +1,5 @@
+// Paiza 問題集 条件分岐メニュー 数値演算結果で分岐 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/conditions_branch/conditions_branch__simple_step3
 #include <stdio.h>
 
 int main()
