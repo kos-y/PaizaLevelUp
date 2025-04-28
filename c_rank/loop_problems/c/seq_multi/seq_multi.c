@@ -1,20 +1,18 @@
+// Paiza 問題集 ループメニュー1 数列の値を全部 * 2 して出力 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/loop_problems/loop_problems__seq_multi
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
     int n;
 
     scanf("%d", &n);
-    int* pa = (int*)calloc(n, sizeof(int));
     for (int i = 0; i < n; i++) {
-        scanf("%d", &pa[i]);
+        int a;
+
+        scanf("%d", &a);
+        printf("%d\n", a * 2);
     }
 
-    for (int i = 0; i < n; i++) {
-        printf("%d\n", pa[i] * 2);
-    }
-
-    free(pa);
     return 0;
 }
