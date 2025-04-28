@@ -1,3 +1,5 @@
+// Paiza 問題集 同値判定 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/conditions_branch/conditions_branch__complex_step3
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -15,6 +17,7 @@ int main()
             c++;
         }
     }
+    
     printf("%d\n", c);
     free(pa);
     free(pb);
