@@ -1,25 +1,22 @@
+// Paiza 問題集 ループメニュー1 数列の最小値 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/loop_problems/loop_problems__seq_min
 #include <stdio.h>
-#include <stdlib.h>
 #include <limits.h>
 
 int main()
 {
-    int n;
+    int n, m = INT_MAX;
 
     scanf("%d", &n);
-    int* pa = (int*)calloc(n, sizeof(int));
     for (int i = 0; i < n; i++) {
-        scanf("%d", &pa[i]);
-    }
+        int a = 0;
 
-    int m = INT_MAX;
-    for (int i = 0; i < n; i++) {
-        if (m > pa[i]) {
-            m = pa[i];
+        scanf("%d", &a);
+        if (m > a) {
+            m = a;
         }
     }
 
     printf("%d\n", m);
-    free(pa);
-    return 0;
+   return 0;
 }
