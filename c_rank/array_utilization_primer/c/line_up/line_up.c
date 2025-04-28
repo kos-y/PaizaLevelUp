@@ -1,3 +1,5 @@
+// Paiza 問題集 配列活用メニュー 場所取り C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__line_up
 #include <stdio.h>
 #include <stdlib.h>
 
