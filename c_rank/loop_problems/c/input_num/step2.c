@@ -1,18 +1,18 @@
+// Paiza 問題集 ループメニュー1 数字の受け取り 2 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/loop_problems/loop_problems__input_num_step2
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
     int n;
 
     scanf("%d", &n);
-    int* pk = (int*)calloc(n, sizeof(int));
     for (int i = 0; i < n; i++) {
-        scanf("%d", &pk[i]);
+        int k;
+
+        scanf("%d", &k);
+        printf("%d\n", k);
     }
-    for (int i = 0; i < n; i++) {
-        printf("%d\n", pk[i]);
-    }
-    free(pk);
+
     return 0;
 }
