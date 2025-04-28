@@ -1,3 +1,5 @@
+// Paiza 問題集 条件分岐メニュー 積の最小化 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/conditions_branch/conditions_branch__complex_boss
 #include <stdio.h>
 #include <limits.h>
 
