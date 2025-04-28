@@ -1,25 +1,22 @@
+// Paiza 問題集 ループメニュー1 数列の最大値 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/loop_problems/loop_problems__seq_max
 #include <stdio.h>
-#include <stdlib.h>
 #include <limits.h>
 
 int main()
 {
-    int n;
+    int n, m = INT_MIN;
 
     scanf("%d", &n);
-    int* pa = (int*)calloc(n, sizeof(int));
     for (int i = 0; i < n; i++) {
-        scanf("%d", &pa[i]);
-    }
+        int a;
 
-    int m = INT_MIN;
-    for (int i = 0; i < n; i++) {
-        if (m < pa[i]) {
-            m = pa[i];
+        scanf("%d", &a);
+        if (m < a) {
+            m = a;
         }
     }
 
     printf("%d\n", m);
-    free(pa);
     return 0;
 }
