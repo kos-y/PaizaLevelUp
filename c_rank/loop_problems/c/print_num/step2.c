@@ -1,3 +1,5 @@
+// Paiza 問題集 ループメニュー1 ある数字までの出力 2 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/loop_problems/loop_problems__print_num_step2
 #include <stdio.h>
 
 int main()
