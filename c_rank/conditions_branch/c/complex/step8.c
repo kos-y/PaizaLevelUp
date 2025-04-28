@@ -1,3 +1,5 @@
+// Paiza 問題集 崖に落ちるか判定 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/conditions_branch/conditions_branch__complex_step8
 #include <stdio.h>
 #include <stdbool.h>
 
