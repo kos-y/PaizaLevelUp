@@ -1,3 +1,5 @@
+// Paiza 問題集 配列活用メニュー queue (9) 係 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__queue
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
