@@ -1,3 +1,5 @@
+// Paiza 問題集 条件分岐メニュー 2 つの倍数判定 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/conditions_branch/conditions_branch__mod_step2
 #include <stdio.h>
 
 int main()
