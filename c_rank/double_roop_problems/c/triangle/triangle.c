@@ -1,3 +1,5 @@
+// Paiza 問題集 二重ループ：活用編 三角形の探索 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/double_roop_problems/double_roop_problems__triangle
 #include <stdio.h>
 #include <math.h>
 
@@ -10,10 +12,7 @@ int main()
         for (int b = 1; b <= n; b++) {
             for (int c = 1; c <= b; c++) {
                 if (a + b + c == n) {
-                    int pa = (int)pow(a, 2);
-                    int pb = (int)pow(b, 2);
-                    int pc = (int)pow(c, 2);
-                    if (pa == pb + pc) {
+                    if ((int)pow(a, 2) == (int)pow(b, 2) + (int)pow(c, 2)) {
                         printf("YES\n");
                         return 0;
                     }
