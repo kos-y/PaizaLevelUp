@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランクレベルアップメニュー フラグ管理 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/c_rank_level_up_problems/c_rank_for_step2
 #include <stdio.h>
 #include <stdbool.h>
 
