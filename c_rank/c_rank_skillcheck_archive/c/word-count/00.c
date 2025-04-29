@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランク・スキルチェック過去問題セット 単語のカウント（力試し編） C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/c_rank_skillcheck_archive/word-count_00
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -30,8 +32,7 @@ int main()
             p_start = (struct W*)calloc(1, sizeof(struct W));
             strcpy(p_start->w, p);
             p_start->c = 1;
-        }
-        else {
+        } else {
             p_prev = NULL;
             p_current = p_start;
             while (p_current != NULL) {
@@ -43,13 +44,13 @@ int main()
                 p_prev = p_current;
                 p_current = p_current->next;
             }
+
             if (p_current == NULL) {
                 if (p_prev == NULL) {
                     p_start->next = (struct W*)calloc(1, sizeof(struct W));
                     strcpy(p_start->next->w, p);
                     p_start->next->c = 1;
-                }
-                else {
+                } else {
                     p_prev->next = (struct W*)calloc(1, sizeof(struct W));
                     strcpy(p_prev->next->w, p);
                     p_prev->next->c = 1;
