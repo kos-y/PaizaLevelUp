@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランクレベルアップメニュー シミュレーションの練習 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/c_rank_level_up_problems/c_rank_simulation_step2
 #include <stdio.h>
 
 int main()
