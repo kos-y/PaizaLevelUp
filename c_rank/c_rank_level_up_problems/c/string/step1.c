@@ -1,28 +1,19 @@
+// Paiza 問題集 Cランクレベルアップメニュー  整数と文字列 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/c_rank_level_up_problems/c_rank_string_step1
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-
-#define LEN 6
 
 int main()
 {
     int n;
 
     scanf("%d", &n);
-    char** ppa = (char**)calloc(n, sizeof(char*));
     for (int i = 0; i < n; i++) {
-        ppa[i] = (char*)calloc(LEN, sizeof(char));
-        scanf("%5s", ppa[i]);
+        char a[6];
+
+        scanf("%5s", a);
+        printf("%lu\n", strlen(a));
     }
 
-    for (int i = 0; i < n; i++) {
-        printf("%lu\n", strlen(ppa[i]));
-    }
-
-    for (int i = 0; i < n; i++) {
-        free(ppa[i]);
-    }
-
-    free(ppa);
     return 0;
 }
