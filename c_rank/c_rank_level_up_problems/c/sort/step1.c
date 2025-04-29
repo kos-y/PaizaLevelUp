@@ -1,4 +1,4 @@
-// Paiza 問題集 Cランクレベルアップメニュー forループ C編（paizaランク C 相当）
+// Paiza 問題集 Cランクレベルアップメニュー 昇順ソート C編（paizaランク D 相当）
 // https://paiza.jp/works/mondai/c_rank_level_up_problems/c_rank_sort_step1
 #include <stdio.h>
 #include <stdlib.h>
