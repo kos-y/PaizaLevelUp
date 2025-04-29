@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランク・スキルチェック過去問題セット 単語のカウント C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/c_rank_skillcheck_archive/word-count
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -7,14 +9,14 @@
 struct W {
     char w[N];
     int c;
-    struct W* next;
+    struct W* pn;
 };
 
 int main()
 {
-    struct W* p_start = NULL;
-    struct W* p_prev = NULL;
-    struct W* p_current = NULL;
+    struct W* ps = NULL;
+    struct W* pp = NULL;
+    struct W* pc = NULL;
     
     char s[N];
     fgets(s, sizeof(s), stdin);
@@ -22,51 +24,46 @@ int main()
     
     char* p = strtok(s, " ");
     while (p != NULL) {
-        if (p_start == NULL) {
-            p_start = (struct W*)calloc(1, sizeof(struct W));
-            strcpy(p_start->w, p);
-            p_start->c = 1;
-        }
-        else {
-            p_prev = NULL;
-            p_current = p_start;
-            while (p_current != NULL) {
-                if (strcmp(p_current->w, p) == 0) {
-                    p_current->c++;
+        if (ps == NULL) {
+            ps = (struct W*)calloc(1, sizeof(struct W));
+            strcpy(ps->w, p);
+            ps->c = 1;
+        } else {
+            pp = NULL;
+            pc = ps;
+            while (pc != NULL) {
+                if (strcmp(pc->w, p) == 0) {
+                    pc->c++;
                     break;
                 }
                 
-                p_prev = p_current;
-                p_current = p_current->next;
+                pp = pc;
+                pc = pc->pn;
             }
-            if (p_current == NULL) {
-                if (p_prev == NULL) {
-                    p_start->next = (struct W*)calloc(1, sizeof(struct W));
-                    strcpy(p_start->next->w, p);
-                    p_start->next->c = 1;
-                }
-                else {
-                    p_prev->next = (struct W*)calloc(1, sizeof(struct W));
-                    strcpy(p_prev->next->w, p);
-                    p_prev->next->c = 1;
-                }
+
+            if (pc == NULL) {
+                struct W** ppt = pp == NULL ? &ps->pn : &pp->pn;
+
+                *ppt = (struct W*)calloc(1, sizeof(struct W));
+                strcpy((*ppt)->w, p);
+                (*ppt)->c = 1;
             }
         }
         
         p = strtok(NULL, " ");
     }
     
-    p_current = p_start;
-    while (p_current != NULL) {
-        printf("%s %d\n", p_current->w, p_current->c);
-        p_current = p_current->next;
+    pc = ps;
+    while (pc != NULL) {
+        printf("%s %d\n", pc->w, pc->c);
+        pc = pc->pn;
     }
     
-    p_current = p_start;
-    while (p_current != NULL) {
-        struct W* buf = p_current->next;
-        free(p_current);
-        p_current = buf;
+    pc = ps;
+    while (pc != NULL) {
+        struct W* buf = pc->pn;
+        free(pc);
+        pc = buf;
     }
     
     return 0;
