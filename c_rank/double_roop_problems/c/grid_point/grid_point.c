@@ -1,3 +1,5 @@
+// Paiza 問題集 二重ループメニュー 格子点 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/double_roop_problems/double_roop_problems__grid_point
 #include <stdio.h>
 #include <math.h>
 
