@@ -1,3 +1,5 @@
+// Paiza 問題集 ループメニュー1 N が M ずつ増えたときにいつ K を越える？ C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/loop_problems2/loop_problems2__inc_m
 #include <stdio.h>
 
 int main()
