@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランクレベルアップメニュー ソート C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/c_rank_level_up_problems/c_rank_sort_boss
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -31,10 +33,5 @@ int cmp(const void* a, const void* b)
     struct GS* pa = (struct GS*)a;
     struct GS* pb = (struct GS*)b;
     
-    if (pa->s != pb->s) {
-        return pb->s - pa->s;
-    }
-    else {
-        return pb->g - pa->g;
-    }
+    return pa->s != pb->s ? pb->s - pa->s : pb->g - pa->g;
 }
