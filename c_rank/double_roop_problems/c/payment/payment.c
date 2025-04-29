@@ -1,3 +1,5 @@
+// Paiza 問題集 二重ループメニュー お金の支払い C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/double_roop_problems/double_roop_problems__payment
 #include <stdio.h>
 
 int coin(int s, int a, int b);
