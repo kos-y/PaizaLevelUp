@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランクレベルアップメニュー シミュレーション C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/c_rank_level_up_problems/c_rank_simulation_boss
 #include <stdio.h>
 
 void shift_left(int* a);
