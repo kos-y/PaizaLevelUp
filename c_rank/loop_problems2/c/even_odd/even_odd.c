@@ -1,25 +1,18 @@
+// Paiza 問題集 ループメニュー1 偶奇の判定 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/loop_problems2/loop_problems2__even_odd
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
     int n;
 
     scanf("%d", &n);
-    int* pa = (int*)calloc(n, sizeof(int));
     for (int i = 0; i < n; i++) {
-        scanf("%d", &pa[i]);
+        int a;
+
+        scanf("%d", &a);
+        printf("%s\n", a % 2 == 0 ? "even" : "odd");
     }
 
-    for (int i = 0; i < n; i++) {
-        if (pa[i] % 2 == 0) {
-            printf("even\n");
-        }
-        else {
-            printf("odd\n");
-        }
-    }
-
-    free(pa);
     return 0;
 }
