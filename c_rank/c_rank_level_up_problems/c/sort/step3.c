@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランクレベルアップメニュー 辞書式ソート C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/c_rank_level_up_problems/c_rank_sort_step3
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,10 +13,10 @@ int main()
 {
     int n;
 
-    scanf("%d ", &n);
+    scanf("%d", &n);
     struct F* a = (struct F*)calloc(n, sizeof(struct F));
     for (int i = 0; i < n; i++) {
-        scanf("%d %d ", &a[i].a, &a[i].b);
+        scanf("%d %d", &a[i].a, &a[i].b);
     }
     
     qsort(a, n, sizeof(struct F), cmp);
@@ -31,10 +33,5 @@ int cmp(const void* a, const void* b)
     struct F* pa = (struct F*)a;
     struct F* pb = (struct F*)b;
     
-    if (pa->a != pb->a) {
-        return pb->a - pa->a;
-    }
-    else {
-        return pb->b - pa->b;
-    }
+    return pa->a != pb->a ? pb->a - pa->a : pb->b - pa->b;
 }
