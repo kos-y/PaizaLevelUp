@@ -1,3 +1,5 @@
+// Paiza 問題集 二重ループメニュー 行列の転置 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/double_roop_problems/double_roop_problems__transposition
 #include <stdio.h>
 #include <stdlib.h>
 
