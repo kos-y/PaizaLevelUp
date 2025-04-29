@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランク・スキルチェック過去問題セット 検索履歴 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/c_rank_skillcheck_archive/search_history
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -18,15 +20,16 @@ void wadd(char* w);
 int main()
 {
     int n;
+
     scanf("%d ", &n);
-    
     for (int i = 0; i < n; i++) {
         char w[LEN];
-        scanf("%s ", w);
-        
+
+        scanf("%s ", w);        
         if (p_start != NULL) {
             wdelete(w);
         }
+        
         wadd(w);
     }
     
@@ -57,30 +60,31 @@ void wdelete(char* w)
                 if (p->next == NULL) {
                     free(p);
                     p_start = NULL;
-                }
-                else {
+                } else {
                     p_start = p->next;
                     p->prev = NULL;
                     free(p);
                 }
-            }
-            else {
+            } else {
                 if (p->next == NULL) {
                     if (p->prev != NULL) {
                         p->prev->next = NULL;
                     }
+
                     free(p);
                 }
                 else {
                     if (p->prev != NULL) {
                         p->prev->next = p->next;
                     }
+
                     p->next->prev = p->prev;
                     free(p);
                 }
             }
             break;
         }
+
         p = p->next;
     }
 }
@@ -94,5 +98,6 @@ void wadd(char* w)
         p->next = p_start;
         p_start->prev = p;
     }
+    
     p_start = p;
 }
