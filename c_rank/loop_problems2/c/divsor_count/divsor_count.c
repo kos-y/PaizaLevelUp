@@ -1,3 +1,5 @@
+// Paiza 問題集 ループメニュー1 約数の個数 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/loop_problems2/loop_problems2__divsor_count
 #include <stdio.h>
 
 int main()
