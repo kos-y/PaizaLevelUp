@@ -1,3 +1,5 @@
+// Paiza 問題集 二重ループメニュー 素数の個数 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/double_roop_problems/double_roop_problems__prime_number_easy
 #include <stdio.h>
 #include <stdbool.h>
 
