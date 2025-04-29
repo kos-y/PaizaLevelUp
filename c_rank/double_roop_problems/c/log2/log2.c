@@ -1,3 +1,5 @@
+// Paiza 問題集 二重ループメニュー log2 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/double_roop_problems/double_roop_problems__log2
 #include <stdio.h>
 
 int main()
@@ -12,8 +14,8 @@ int main()
             d /= 2;
             c++;
         }
-
     }
+    
     printf("%d\n", c);    
     return 0;
 }
