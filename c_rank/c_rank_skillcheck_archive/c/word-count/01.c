@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランク・スキルチェック過去問題セット 「単語のカウント」を解くために:part1 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/c_rank_skillcheck_archive/word-count_01
 #include <stdio.h>
 #include <string.h>
 
