@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランクレベルアップメニュー 3の倍数のカウント C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/c_rank_level_up_problems/c_rank_for_step1
 #include <stdio.h>
 
 int main()
