@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランクレベルアップメニュー 辞書データの順序 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/c_rank_level_up_problems/c_rank_dictionary_step3
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
