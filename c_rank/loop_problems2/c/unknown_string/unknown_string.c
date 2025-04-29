@@ -1,49 +1,18 @@
+// Paiza 問題集 ループメニュー1 未知数個の文字列の受け取り C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/loop_problems2/loop_problems2__unknown_string
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-
-#define LEN 1
-
-struct V {
-    char s[LEN + 1];
-    struct V* pn;
-};
 
 int main()
 {
-    char s[LEN + 1];
-    struct V* ps = NULL;
-    struct V* pc = NULL;
-
     while (1) {
-        scanf("%s", &s);
-        if (ps == NULL) {
-            ps = (struct V*)calloc(1, sizeof(struct V));
-            strcpy(ps->s, s);
-            pc = ps;
-        }
-        else {
-            pc->pn = (struct V*)calloc(1, sizeof(struct V));
-            strcpy(pc->pn->s, s);
-            pc = pc->pn;
-        }
+        char s[11];
 
+        scanf("%10s", s);
+        printf("%s\n", s);
         if (strcmp(s, "EOF") == 0) {
             break;
         }
-    }
-
-    pc = ps;
-    while (pc != NULL) {
-        printf("%s\n", pc->s);
-        pc = pc->pn;
-    }
-
-    pc = ps;
-    while (pc != NULL) {
-        struct V* p = pc->pn;
-        free(pc);
-        pc = p;
     }
 
     return 0;
