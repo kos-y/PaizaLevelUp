@@ -1,36 +1,25 @@
+// Paiza 問題集 二重ループメニュー さまざまな長さの配列の和 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/double_roop_problems/double_roop_problems__various_row_sum
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
     int n;
 
     scanf("%d", &n);
-    int** ppa = (int**)calloc(n, sizeof(int*));
-    int* plen = (int*)calloc(n, sizeof(int));
     for (int i = 0; i < n; i++) {
-        scanf("%d", &plen[i]);
-        ppa[i] = (int*)calloc(plen[i], sizeof(int));
-        for (int j = 0; j < plen[i]; j++) {
-            scanf("%d", &ppa[i][j]);
-        }
-    }
+        int k, sum = 0;
 
-    for (int i = 0; i < n; i++) {
-        int s = 0;
+        scanf("%d", &k);
+        for (int j = 0; j < k; j++) {
+            int a;
 
-        for (int j = 0; j < plen[i]; j++) {
-            s += ppa[i][j];
+            scanf("%d", &a);
+            sum += a;
         }
 
-        printf("%d\n", s);
+        printf("%d\n", sum);
     }
 
-    for (int i = 0; i < n; i++) {
-        free(ppa[i]);
-    }
-
-    free(ppa);
-    free(plen);
     return 0;
 }
