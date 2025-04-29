@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランクレベルアップメニュー 数字の文字列操作（基本） C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/c_rank_level_up_problems/c_rank_string_step3
 #include <stdio.h>
 
 int todigit(char c);
