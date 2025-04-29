@@ -1,3 +1,5 @@
+// Paiza 問題集 ループメニュー1 2 で何回割れる？ C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/loop_problems2/loop_problems2__div_two
 #include <stdio.h>
 
 int main()
