@@ -13,7 +13,6 @@ int main()
 
     char* ps = strstr(n, st);
     char* pe = strstr(n, et);
-    *ps = *pe = ' ';
     while (ps != NULL && pe != NULL) {
         *ps = *pe = ' ';
 
