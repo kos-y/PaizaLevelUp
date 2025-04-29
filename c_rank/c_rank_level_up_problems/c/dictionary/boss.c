@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランクレベルアップメニュー 辞書 C編（paizaランク C 相当）
+// https://paiza.jp/works/mondai/c_rank_level_up_problems/c_rank_dictionary_boss
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,15 +12,15 @@ int main()
 {
     int p, q, r;
 
-    scanf("%d %d %d ", &p, &q, &r);
+    scanf("%d %d %d", &p, &q, &r);
     struct IJ* ij = (struct IJ*)calloc(p, sizeof(struct IJ));
     for (int i = 0; i < p; i++) {
-        scanf("%d %d ", &ij[i].i, &ij[i].j);
+        scanf("%d %d", &ij[i].i, &ij[i].j);
     }
     
     struct JK* jk = (struct JK*)calloc(q, sizeof(struct JK));
     for (int i = 0; i < q; i++) {
-        scanf("%d %d ", &jk[i].j, &jk[i].k);
+        scanf("%d %d", &jk[i].j, &jk[i].k);
     }
     
     qsort(ij, p, sizeof(struct IJ), cmp);
