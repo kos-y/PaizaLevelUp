@@ -1,3 +1,5 @@
+// Paiza 問題集 Cランク・スキルチェック過去問題セット 「単語のカウント」を解くために:part3 C編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/c_rank_skillcheck_archive/word-count_03
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,20 +12,17 @@ struct W {
 int main()
 {
     char s[1002];
+    struct W *ps = NULL, *pp = NULL, *pc = NULL;
+
     fgets(s, sizeof(s), stdin);
     s[strcspn(s, "\n")] = '\0';
-    
-    struct W* ps;
-    struct W* pp;
-    struct W* pc;
     char* p = strtok(s, " ");
     while (p != NULL) {
         if (ps == NULL) {
             ps = (struct W*)calloc(1, sizeof(struct W));
             strcpy(ps->s, p);
             printf("%s\n", p);
-        }
-        else {
+        } else {
             pp = NULL;
             pc = ps;
             while (pc != NULL) {
@@ -40,12 +39,11 @@ int main()
                 if (pp == NULL) {
                     ps->pn = (struct W*)calloc(1, sizeof(struct W));
                     strcpy(ps->pn->s, p);
-                }
-                else {
+                } else {
                     pp->pn = (struct W*)calloc(1, sizeof(struct W));
                     strcpy(pp->pn->s, p);
-
                 }
+
                 printf("%s\n", p);
             }
         }
