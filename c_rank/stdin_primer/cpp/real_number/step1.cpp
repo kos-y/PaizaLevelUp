@@ -7,14 +7,12 @@ using namespace std;
 int main()
 {
     int n;
-    cin >> n;
-    cin.ignore();
 
-    string s;
-    getline(cin, s);
-    istringstream iss(s);
-    double a;
-    while (iss >> a) {
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        double a;
+
+        cin >> a;
         cout << a << endl;
     }
 
