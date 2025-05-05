@@ -1,5 +1,5 @@
-// Paiza 問題集 文字列処理メニュー 小文字から大文字への変換 C++編（paizaランク D 相当）
-// https://paiza.jp/works/mondai/string_primer/normal_step7
+// Paiza 問題集 文字列処理メニュー 大文字小文字の反転 C++編（paizaランク D 相当）
+// https://paiza.jp/works/mondai/string_primer/normal_step8
 #include <iostream>
 #include <cctype>
 using namespace std;
